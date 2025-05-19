@@ -3,6 +3,7 @@ package ma.enset.gestioncreditsbancaires.entities;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.time.LocalDate;
 import java.util.List;
 
 @Entity
@@ -27,4 +28,8 @@ public abstract class Credit {
 
     @OneToMany(mappedBy = "credit", cascade = CascadeType.ALL)
     private List<Remboursement> remboursements;
+
+    public LocalDate getDateAcceptation() {
+        return null;
+    }
 }
