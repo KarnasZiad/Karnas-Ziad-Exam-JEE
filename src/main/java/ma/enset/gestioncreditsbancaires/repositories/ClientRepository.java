@@ -14,4 +14,5 @@ public interface ClientRepository extends JpaRepository<Client, Long> {
     @Query("SELECT new ma.enset.gestioncreditsbancaires.dtos.ClientResponseDTO(c.id, c.nom, c.email) FROM Client c WHERE c.id = :id")
     ClientResponseDTO findClientDTOById(@Param("id") Long id);
     Optional<Client> findByUsername(String username);
+    Client findByEmail(String email); // Ajout pour l'authentification par email
 }
