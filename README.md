@@ -33,11 +33,7 @@ Ce projet est une application complète de gestion des crédits bancaires, compo
   ```
 - L’application sera accessible sur `http://localhost:4200`
 
-## Lien entre backend et frontend
-Le frontend Angular consomme l’API REST exposée par le backend pour afficher et gérer les clients, crédits et remboursements.
 
-## Auteurs
-- Projet pédagogique – 2025
 
 ## Ressources complémentaires
 - Voir les README spécifiques dans `frontend/credit-app/` et à la racine backend pour plus de détails sur chaque partie.
